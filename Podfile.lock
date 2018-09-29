@@ -1,5 +1,5 @@
 PODS:
-  - FXDanmaku (1.0.5)
+  - FXDanmaku (1.0.6)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  FXDanmaku: 7b148064ae6ea8d2598a219ab9189cf826fe09d9
+  FXDanmaku: bb4fbfa014499a18397dbb2c1995718661fa0dd4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 81da9163602680e826ace0f4c4c46198bc0a891d

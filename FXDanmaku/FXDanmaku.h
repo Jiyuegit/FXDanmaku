@@ -46,6 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param data The data of item.
  */
 - (void)danmaku:(FXDanmaku *)danmaku didEndDisplayingItem:(FXDanmakuItem *)item withData:(FXDanmakuItemData *)data;
+////点击了空白的View
+- (void)danmakudidEndMarginView;
 
 /**
  Tells the delegate if this data should be added into queue when data queue is full.

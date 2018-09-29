@@ -644,11 +644,6 @@ typedef NS_ENUM(NSUInteger, DanmakuStatus) {
     UITouch *touch = touches.anyObject;
     if (touch.tapCount == 1) {
         [self handleTouchAtPoint:[touch locationInView:self]];
-    }else{
-        id<FXDanmakuDelegate> strongDelegate = self.delegate;
-        if ([strongDelegate respondsToSelector:@selector(danmakudidEndMarginView)]) {
-            [strongDelegate danmakudidEndMarginView];
-        }
     }
 }
 
@@ -665,6 +660,11 @@ typedef NS_ENUM(NSUInteger, DanmakuStatus) {
     FXDanmakuItem *item = [self itemAtTouchPoint:point];
     if (item) {
         [self notifyDelegateClickedItem:item];
+    }else{
+        id<FXDanmakuDelegate> strongDelegate = self.delegate;
+        if ([strongDelegate respondsToSelector:@selector(danmakudidEndMarginView)]) {
+            [strongDelegate danmakudidEndMarginView];
+        }
     }
 }
 
